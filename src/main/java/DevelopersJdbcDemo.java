@@ -11,15 +11,15 @@ public class DevelopersJdbcDemo {
      * User and Password
      */
     private static final String USER = "root";
-    private static final String PASSWORD = "кщще";
+    private static final String PASSWORD = "root";
 
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
-        Connection connection = null;
-        Statement statement = null;
+        Connection connection;
+        Statement statement;
 
         System.out.println("Registering JDBC driver...");
 
-        Class.forName("com.mysql.jdbc.Driver");
+        Class.forName(JDBC_DRIVER);
 
         System.out.println("Creating database connection...");
         connection = DriverManager.getConnection(DATABASE_URL, USER, PASSWORD);
