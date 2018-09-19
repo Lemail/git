@@ -1,17 +1,12 @@
-import entity.Developer;
-import entity.DeveloperExample;
-import entity.User;
-import entity.UserExample;
-import mapper.DeveloperMapper;
-import mapper.UserMapper;
+import entity.*;
+import mapper.*;
 import org.apache.ibatis.io.Resources;
-import org.apache.ibatis.session.SqlSession;
-import org.apache.ibatis.session.SqlSessionFactory;
-import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+import org.apache.ibatis.session.*;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
+import java.util.Scanner;
 
 public class Application {
     public static void main(String[] args) throws IOException {
@@ -20,20 +15,33 @@ public class Application {
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
         SqlSession sqlSession = sqlSessionFactory.openSession();
         try {
-            UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
-            UserExample userExample = new UserExample();
-            userExample.createCriteria().andUserNameEqualTo("0000");
-            //List<User> allRecords = userMapper.selectByExample(userExample);
-            //sqlSession.commit();
-            /*for (User user : allRecords) {
-                System.out.println("user id: " + user.getId());
-                System.out.println("user name: " + user.getUserName());
-
-            }*/
             DeveloperMapper developerMapper = sqlSession.getMapper(DeveloperMapper.class);
             DeveloperExample developerExample = new DeveloperExample();
-            developerExample.createCriteria().andSpecialtyEqualTo("Java");
+            developerExample.createCriteria().andIdGreaterThan(0);
+            Scanner reader = new Scanner(System.in);  // Reading from System.in
+            System.out.println("Do you wish to add new developer into database?(y/n):");
+            String batchStatus = reader.nextLine();
+
+
+            while (batchStatus.equals("y")){
+                Developer test = new Developer();
+                System.out.println("Input id:");
+                test.setId(reader.nextInt());
+                reader.nextLine();
+                System.out.println("Input name:");
+                test.setName(reader.nextLine());
+                System.out.println("Input salary:");
+                test.setSalary(reader.nextInt());
+                reader.nextLine();
+                System.out.println("Input speciality:");
+                test.setSpecialty(reader.nextLine());
+                System.out.println("Do you wish to add another developer into database?(y/n):");
+                batchStatus = reader.nextLine();
+                sqlSession.insert("mapper.DeveloperMapper.insert", test);
+            }
+
             List<Developer> allRecords = developerMapper.selectByExample(developerExample);
+            sqlSession.commit();
             for (Developer developer : allRecords) {
                 System.out.println("---------------------------------");
                 System.out.println("Developer id: " + developer.getId());
