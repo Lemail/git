@@ -20,28 +20,30 @@ public class Application {
             developerExample.createCriteria().andIdGreaterThan(0);
             Scanner reader = new Scanner(System.in);  // Reading from System.in
             System.out.println("Do you wish to add new developer into database?(y/n):");
-            String batchStatus = reader.nextLine();
-
-
-            while (batchStatus.equals("y")){
+            String operationStatus = reader.nextLine();
+            while (operationStatus.equals("y")){
                 Developer test = new Developer();
                 System.out.println("Input id:");
                 test.setId(reader.nextInt());
                 reader.nextLine();
                 System.out.println("Input name:");
                 test.setName(reader.nextLine());
+                System.out.println("Input speciality:");
+                test.setSpecialty(reader.nextLine());
                 System.out.println("Input salary:");
                 test.setSalary(reader.nextInt());
                 reader.nextLine();
-                System.out.println("Input speciality:");
-                test.setSpecialty(reader.nextLine());
-                System.out.println("Do you wish to add another developer into database?(y/n):");
-                batchStatus = reader.nextLine();
                 sqlSession.insert("mapper.DeveloperMapper.insert", test);
-            }
+                System.out.println("Do you wish to add another developer into database?(y/n):");
+                operationStatus = reader.nextLine();
 
+            }
+            /*Developer test = new Developer();
+            test.setName("Michael");
+            test.setSalary(2000);
+            test.setSpecialty("Java");
+            developerMapper.insertAutoID(test);*/
             List<Developer> allRecords = developerMapper.selectByExample(developerExample);
-            sqlSession.commit();
             for (Developer developer : allRecords) {
                 System.out.println("---------------------------------");
                 System.out.println("Developer id: " + developer.getId());
@@ -49,7 +51,7 @@ public class Application {
                 System.out.println("Developer speciality: " + developer.getSpecialty());
                 System.out.println("Developer salary: " + developer.getSalary());
             }
-
+            sqlSession.commit();
         } finally {
             sqlSession.close();
         }
