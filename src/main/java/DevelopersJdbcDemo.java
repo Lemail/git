@@ -6,7 +6,7 @@ public class DevelopersJdbcDemo {
      * JDBC Driver and database url
      */
     private static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-    private static final String DATABASE_URL = "jdbc:mysql://localhost/test?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
+    private static final String DATABASE_URL = "jdbc:mysql://localhost/test?serverTimezone=UTC";
 
     /**
      * User and Password
