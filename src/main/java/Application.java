@@ -1,7 +1,10 @@
-import entity.*;
-import mapper.*;
+import entity.Developer;
+import entity.DeveloperExample;
+import mapper.DeveloperMapper;
 import org.apache.ibatis.io.Resources;
-import org.apache.ibatis.session.*;
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 import java.io.IOException;
 import java.io.InputStream;
