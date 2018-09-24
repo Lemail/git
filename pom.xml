@@ -17,7 +17,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>Application</mainClass>
+                            <mainClass>sql.Application</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

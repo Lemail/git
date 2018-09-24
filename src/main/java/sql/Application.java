@@ -1,3 +1,5 @@
+package sql;
+
 import entity.Developer;
 import entity.DeveloperExample;
 import mapper.DeveloperMapper;
