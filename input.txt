@@ -1,0 +1,5 @@
+Action&& Bad->Dell
+Bad&&CellL||Dell->Eval
+Bad&&Action||Dell&&Bad->Cell
+----------------------------------------------------------------
+Action,Bad
