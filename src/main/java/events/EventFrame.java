@@ -39,7 +39,7 @@ public class EventFrame extends JFrame {
 
         add(buttonPanel);
         pack();
-        add(new MouseComponent());
+        add(new MouseComponent(), BorderLayout.SOUTH);
         pack();
 
 

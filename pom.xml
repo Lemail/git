@@ -17,7 +17,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>sql.Application</mainClass>
+                            <mainClass>events.Application</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
