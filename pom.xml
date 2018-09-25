@@ -17,7 +17,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>events.Application</mainClass>
+                            <mainClass>swing.events.Application</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

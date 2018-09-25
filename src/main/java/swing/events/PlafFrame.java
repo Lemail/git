@@ -1,4 +1,4 @@
-package events;
+package swing.events;
 
 import javax.swing.*;
 
