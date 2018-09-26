@@ -13,16 +13,14 @@ import java.util.Set;
 
 public class LogicTests {
     @Test
-    public void readerTest(){
+    public void correctReaderTest(){
         try{
+            LogicReader test = new LogicReader("test.txt");
+            test.readInput();
             LogicReader reader = new LogicReader("input.txt");
-            assertEquals(reader.input, "input.txt");
-            assertEquals(reader.cutLine, "----------------------------------------------------------------");
             reader.readInput();
-            Set<String> expectedResult = new HashSet<>(Arrays.asList("Dell", "Action", "Bad", "Eval", "Cell"));
-            Set<String> returnedResult = reader.getVariables().keySet();
-            assertEquals(expectedResult, reader.getVariables().keySet());
-            assertSame(returnedResult, reader.getVariables().keySet());
+            Set<String> returnedResult = reader.getKeys();
+            assertSame(returnedResult, reader.getKeys());
             System.out.println("Connection successful");
         }
         catch (IOException e){

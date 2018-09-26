@@ -1,5 +1,7 @@
-Action&& Bad->Dell
-Bad&&CellL||Dell->Eval
-Bad&&Action||Dell&&Bad->Cell
+A->D
+
+A&&B&&C||E&&F&&D||THIS&&THAT->H
+THIS->THAT
+A B->O
 ----------------------------------------------------------------
-Action,Bad
+A,B,E,F,THIS,TEST,T E
