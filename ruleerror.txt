@@ -1,10 +1,5 @@
-Aaaaaaaaaaaaaaaaaaaaaaaaaaaaa->C
-
-
-
-B        D  ->D
-E
-E
-E
+A E|||B->C
+A%C|D->F
+B.X&&&&Z->E
 ----------------------------------------------------------------
-A
+A,B

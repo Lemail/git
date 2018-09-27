@@ -1,31 +1,20 @@
 package logic;
 
+import junit.framework.TestResult;
+import junit.framework.TestSuite;
 import org.junit.Test;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertSame;
-
-import java.io.IOException;
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
-
 public class LogicTests {
-    @Test
-    public void correctReaderTest(){
-        try{
-            LogicReader test = new LogicReader("test.txt");
-            test.readInput();
-            LogicReader reader = new LogicReader("input.txt");
-            reader.readInput();
-            Set<String> returnedResult = reader.getKeys();
-            assertSame(returnedResult, reader.getKeys());
-            System.out.println("Connection successful");
-        }
-        catch (IOException e){
-            System.out.println("Connection failed");
-        }
-    }
+    TestSuite testSuite = new TestSuite(CorrectReaderTest.class, IncorrectFactInRuleTest.class,
+            IncorrectFileNameTest.class, IncorrectOperationTest.class, IncorrectRuleTest.class, NullArgumentTest.class,
+            SkipLineTest.class, SpaceVariableTest.class);
+    TestResult result = new TestResult();
 
+    @Test
+    public void testSuiteInAction() {
+        testSuite.setName("Logic Tests");
+        System.out.println("Name of Test Suite: " + testSuite.getName());
+        System.out.println("Amount of test cases: " + testSuite.countTestCases());
+        testSuite.run(result);
+
+    }
 }

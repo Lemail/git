@@ -1,10 +1,6 @@
-Aaaaaaaaaaaaaaaaaaaaaaaaaaaaa->C
+A->D
 
-
-
-B        D  ->D
-E
-E
-E
+A&&B&&C||E&&F&&D||THIS&&THAT->H
+B->O
 ----------------------------------------------------------------
-A
+A,B,E,F,THIS,T,E

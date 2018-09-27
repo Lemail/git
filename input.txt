@@ -1,7 +1,5 @@
-A->D
-
 A&&B&&C||E&&F&&D||THIS&&THAT->H
-THIS->THAT
-A B->O
+
+A->THAT
 ----------------------------------------------------------------
-A,B,E,F,THIS,TEST,T E
+A,B,E,F,THIS,T
