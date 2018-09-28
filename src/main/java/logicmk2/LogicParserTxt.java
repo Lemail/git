@@ -31,7 +31,7 @@ public class LogicParserTxt {
                             parsedFileByArrow[expressionLines][1] = ruleVariable;
                         }
                         else{
-                            System.out.println("Error in rule "+line+" (line "+expressionLines+")");
+                            System.out.println("Error in rule "+line+" (line "+(expressionLines + 1)+")");
                             System.out.println("Invalid fact "+ ruleVariable);
                             System.out.println("Unsupported symbol");
                             System.out.println("Check for missing operation and fact correctness");
@@ -42,7 +42,7 @@ public class LogicParserTxt {
                     }
                     else{
                         parsedFileByArrow[expressionLines][1] = "";
-                        System.out.println("Error in rule "+line+" (line "+expressionLines+")");
+                        System.out.println("Error in rule "+line+" (line "+(expressionLines + 1)+")");
                         System.out.println("Missing equation");
                         System.out.println();
                         skipLines.add(expressionLines);
@@ -50,7 +50,7 @@ public class LogicParserTxt {
                     }
                 }
                 catch (NoSuchElementException e){
-                    System.out.println("No equation in line"+expressionLines);
+                    System.out.println("No equation in line"+(expressionLines+1));
                     status = false;
                 }
             }
