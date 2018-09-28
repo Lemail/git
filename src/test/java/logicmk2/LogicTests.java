@@ -1,4 +1,4 @@
-package logic;
+package logicmk2;
 
 import junit.framework.TestResult;
 import junit.framework.TestSuite;
@@ -10,7 +10,7 @@ public class LogicTests {
     TestResult result = new TestResult();
 
     @Test
-    public void testSuiteInAction() {
+    public void logicTests() {
         testSuite.setName("Logic Tests");
         System.out.println("Name of Test Suite: " + testSuite.getName());
         System.out.println("Amount of test cases: " + testSuite.countTestCases());

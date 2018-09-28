@@ -1,13 +1,18 @@
 package logicmk2;
 
 import logic.ExpressionTxt;
-import logic.LogicParser;
+import org.junit.Test;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.Set;
 
-public class Application {
-    public static void main(String[] args) {
-        LogicReader reader = new LogicReader(args[0]);
+import static junit.framework.TestCase.assertEquals;
+
+public class IncorrectFileNameTest {
+    @Test
+    public void incorrectFileNameTest() {
+        LogicReader reader = new LogicReader("nosuchfile.txt");
         LogicParserTxt parser = new LogicParserTxt();
         try{
             reader.readFromFile();
@@ -17,25 +22,16 @@ public class Application {
         catch (IOException e){
             System.out.println("Fatal error");
             System.out.println("No such file found \""+reader.getFileName()+"\"");
-            System.exit(-1);
         }
         catch (NullPointerException e){
             System.out.println("Fatal error");
-            System.out.println("Missing file parameter");
-            System.exit(-1);
+            System.out.println("File name missing");
         }
         LogicEvaluator evaluator = new LogicEvaluator(parser.getVariables());
-        for (int i = 0; i < reader.getReadFile().size() - 1; i++){
-            for (ExpressionTxt expression : parser.getExpressions()){
+        for (int i = 0; i < reader.getReadFile().size(); i++) {
+            for (ExpressionTxt expression : parser.getExpressions()) {
                 evaluator.evaluateExpression(expression);
             }
         }
-        if (parser.isStatus()){
-            for (String result : evaluator.getResult())
-            System.out.println(result);
-        }
-        else System.out.println("Logical error(s) detected\nCheck the log above");
-
-
     }
 }

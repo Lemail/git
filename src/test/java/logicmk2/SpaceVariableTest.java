@@ -1,18 +1,20 @@
 package logicmk2;
 
 import logic.ExpressionTxt;
-import logic.LogicParser;
+import org.junit.Test;
 
 import java.io.IOException;
+import java.util.Set;
 
-public class Application {
-    public static void main(String[] args) {
-        LogicReader reader = new LogicReader(args[0]);
+import static junit.framework.TestCase.assertEquals;
+
+public class SpaceVariableTest {
+    @Test
+    public void spaceVariableTest(){
+        LogicReader reader = new LogicReader("facterror.txt");
         LogicParserTxt parser = new LogicParserTxt();
         try{
             reader.readFromFile();
-            parser.parseFile(reader.getReadFile());
-            parser.parseVariablesLine(reader.getVariablesLine());
         }
         catch (IOException e){
             System.out.println("Fatal error");
@@ -21,21 +23,18 @@ public class Application {
         }
         catch (NullPointerException e){
             System.out.println("Fatal error");
-            System.out.println("Missing file parameter");
+            System.out.println("File not found");
             System.exit(-1);
         }
+        parser.parseFile(reader.getReadFile());
+        parser.parseVariablesLine(reader.getVariablesLine());
         LogicEvaluator evaluator = new LogicEvaluator(parser.getVariables());
         for (int i = 0; i < reader.getReadFile().size() - 1; i++){
             for (ExpressionTxt expression : parser.getExpressions()){
                 evaluator.evaluateExpression(expression);
             }
         }
-        if (parser.isStatus()){
-            for (String result : evaluator.getResult())
-            System.out.println(result);
-        }
-        else System.out.println("Logical error(s) detected\nCheck the log above");
-
-
+        Set<String> returnedResult = evaluator.getResult();
+        assertEquals(returnedResult.toString(), "[A]");
     }
 }

@@ -37,7 +37,7 @@
                          <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>libs/</classpathPrefix>
-                            <mainClass>logic.Application</mainClass>
+                            <mainClass>logicmk2.Application</mainClass>
                          </manifest>
                       </archive>
                 </configuration>

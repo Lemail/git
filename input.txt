@@ -1,5 +1,8 @@
-A&&B&&C||E&&F&&D||THIS&&THAT->H
+A->D
 
-A->THAT
+A&&B&&C||E&&F&&D||THIS&&THAT->H
+THIS%t->THAT
+B->O
+A->
 ----------------------------------------------------------------
-A,B,E,F,THIS,T
+A,    B,E,F,THIS,T,E
