@@ -1,7 +1,5 @@
 package logicmk2;
 
-import logic.ExpressionTxt;
-
 import java.util.*;
 
 public class LogicParserTxt {
@@ -20,37 +18,75 @@ public class LogicParserTxt {
         for (String line : readFile){
             String delimiter = "----------------------------------------------------------------";
             if (line.equals(delimiter)) break;
-            if (!line.equals("")){
+            if ((!line.equals("")) && (!line.matches("[\\s]+"))){
+                if (line.substring(0, line.indexOf(">")+1).trim().equals("->")){
+                    System.out.println("Error in rule "+line.trim()+" (line "+(expressionLines + 1)+")");
+                    System.out.println("Invalid rule");
+                    System.out.println();
+                    skipLines.add(expressionLines);
+                    status = false;
+                    expressionLines++;
+                    continue;
+                }
                 Scanner lineParser = new Scanner(line);
                 lineParser.useDelimiter("->");
                 try{
-                    parsedFileByArrow[expressionLines][0] = lineParser.next().trim();
+                    String ruleVariable = lineParser.next().trim();
+                    if (!ruleVariable.equals("")){
+                        parsedFileByArrow[expressionLines][0] = ruleVariable;
+                    }
+                    else{
+                        parsedFileByArrow[expressionLines][0] = "";
+                        System.out.println("Error in rule "+line.trim()+" (line "+(expressionLines + 1)+")");
+                        System.out.println("Missing fact");
+                        System.out.println();
+                        skipLines.add(expressionLines);
+                        status = false;
+                    }
                     if (lineParser.hasNext()){
-                        String ruleVariable = lineParser.next().trim();
-                        if (ruleVariable.matches("[a-zA-Z_]*[\\w]")){
-                            parsedFileByArrow[expressionLines][1] = ruleVariable;
-                        }
-                        else{
-                            System.out.println("Error in rule "+line+" (line "+(expressionLines + 1)+")");
-                            System.out.println("Invalid fact "+ ruleVariable);
-                            System.out.println("Unsupported symbol");
-                            System.out.println("Check for missing operation and fact correctness");
+                        ruleVariable = lineParser.next().trim();
+                        lineParser.useDelimiter("");
+                        if (lineParser.hasNext()){
+                            System.out.println("Error in rule "+line.trim()+" (line "+(expressionLines + 1)+")");
+                            System.out.println("Invalid rule");
                             System.out.println();
                             skipLines.add(expressionLines);
                             status = false;
                         }
+
+                        if (ruleVariable.matches("[a-zA-Z_]*[\\w]")){
+                            parsedFileByArrow[expressionLines][1] = ruleVariable;
+                        }
+                        else{
+                            if (ruleVariable.equals("")){
+                                System.out.println("Error in rule "+line.trim()+" (line "+(expressionLines + 1)+")");
+                                System.out.println("Missing fact ");
+                                System.out.println();
+                                skipLines.add(expressionLines);
+                                status = false;
+                            }
+                            else {
+                                System.out.println("Error in rule "+line.trim()+" (line "+(expressionLines + 1)+")");
+                                System.out.println("Invalid fact "+ ruleVariable);
+                                System.out.println("Unsupported symbol");
+                                System.out.println();
+                                skipLines.add(expressionLines);
+                                status = false;
+                            }
+
+                        }
                     }
                     else{
                         parsedFileByArrow[expressionLines][1] = "";
-                        System.out.println("Error in rule "+line+" (line "+(expressionLines + 1)+")");
-                        System.out.println("Missing equation");
+                        System.out.println("Error in rule "+line.trim()+" (line "+(expressionLines + 1)+")");
+                        System.out.println("Invalid rule");
                         System.out.println();
                         skipLines.add(expressionLines);
                         status = false;
                     }
                 }
                 catch (NoSuchElementException e){
-                    System.out.println("No equation in line"+(expressionLines+1));
+                    System.out.println("No rule in line"+(expressionLines+1));
                     status = false;
                 }
             }
@@ -83,12 +119,12 @@ public class LogicParserTxt {
                             }
                             else{
                                 if (addVariable.equals("")){
-                                    System.out.println("Missing fact in rule "+parsedFileByArrow[currentLine][0]+" (line "+currentLine+")");
+                                    System.out.println("Missing fact in rule "+readFile.get(currentLine).trim()+" (line "+currentLine+")");
                                     System.out.println();
                                     skipLines.add(currentLine);
                                     status = false;
                                 }else{
-                                    System.out.println("Error in rule "+parsedFileByArrow[currentLine][0]+" (line "+currentLine+")");
+                                    System.out.println("Error in rule "+readFile.get(currentLine).trim()+" (line "+currentLine+")");
                                     System.out.println("Invalid fact "+addVariable);
                                     System.out.println("Unsupported symbol");
                                     System.out.println("Check for missing operation and fact correctness");
@@ -108,7 +144,7 @@ public class LogicParserTxt {
                             else{
                                 skipLines.add(currentLine);
                                 System.out.println("Invalid operation "+expressionArray[i]+" in rule "
-                                        +parsedFileByArrow[currentLine][0]+" (line "+currentLine+")");
+                                        +readFile.get(currentLine).trim()+" (line "+currentLine+")");
                                 System.out.println("Supported operations are \"&&\" and \"||\"");
                                 System.out.println();
                                 status = false;
@@ -124,12 +160,12 @@ public class LogicParserTxt {
                         }
                         else{
                             if (addVariable.equals("")){
-                                System.out.println("Missing fact in rule "+parsedFileByArrow[currentLine][0]+" (line "+currentLine+")");
+                                System.out.println("Missing fact in rule "+readFile.get(currentLine).trim()+" (line "+currentLine+")");
                                 System.out.println();
                                 skipLines.add(currentLine);
                                 status = false;
                             }else{
-                                System.out.println("Invalid fact "+addVariable+" in rule "+parsedFileByArrow[currentLine][0]+" (line "+currentLine+")");
+                                System.out.println("Invalid fact "+addVariable+" in rule "+readFile.get(currentLine).trim()+" (line "+currentLine+")");
                                 System.out.println("Unsupported symbol");
                                 System.out.println("Check for missing operation and fact correctness");
                                 System.out.println();

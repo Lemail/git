@@ -1,7 +1,5 @@
 package logicmk2;
 
-import logic.ExpressionTxt;
-
 import java.io.IOException;
 
 public class Application {
@@ -24,7 +22,7 @@ public class Application {
             System.exit(-1);
         }
         LogicEvaluator evaluator = new LogicEvaluator(parser.getVariables());
-        for (int i = 0; i < reader.getReadFile().size() - 1; i++){
+        for (int i = 0; i < parser.getExpressions().size(); i++){
             for (ExpressionTxt expression : parser.getExpressions()){
                 evaluator.evaluateExpression(expression);
             }

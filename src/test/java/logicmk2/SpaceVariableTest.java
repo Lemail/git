@@ -1,6 +1,5 @@
 package logicmk2;
 
-import logic.ExpressionTxt;
 import org.junit.Test;
 
 import java.io.IOException;
@@ -29,7 +28,7 @@ public class SpaceVariableTest {
             System.exit(-1);
         }
         LogicEvaluator evaluator = new LogicEvaluator(parser.getVariables());
-        for (int i = 0; i < reader.getReadFile().size() - 1; i++){
+        for (int i = 0; i < parser.getExpressions().size(); i++){
             for (ExpressionTxt expression : parser.getExpressions()){
                 evaluator.evaluateExpression(expression);
             }

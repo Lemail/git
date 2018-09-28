@@ -1,7 +1,5 @@
 package logicmk2;
 
-import logic.ExpressionTxt;
-
 import java.util.List;
 import java.util.Set;
 
