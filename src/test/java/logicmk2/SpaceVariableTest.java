@@ -15,6 +15,8 @@ public class SpaceVariableTest {
         LogicParserTxt parser = new LogicParserTxt();
         try{
             reader.readFromFile();
+            parser.parseRules(reader.getReadFile());
+            parser.parseVariablesLine(reader.getVariablesLine());
         }
         catch (IOException e){
             System.out.println("Fatal error");
@@ -26,8 +28,6 @@ public class SpaceVariableTest {
             System.out.println("File not found");
             System.exit(-1);
         }
-        parser.parseFile(reader.getReadFile());
-        parser.parseVariablesLine(reader.getVariablesLine());
         LogicEvaluator evaluator = new LogicEvaluator(parser.getVariables());
         for (int i = 0; i < reader.getReadFile().size() - 1; i++){
             for (ExpressionTxt expression : parser.getExpressions()){

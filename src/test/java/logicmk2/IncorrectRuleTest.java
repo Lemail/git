@@ -15,7 +15,7 @@ public class IncorrectRuleTest {
         LogicParserTxt parser = new LogicParserTxt();
         try{
             reader.readFromFile();
-            parser.parseFile(reader.getReadFile());
+            parser.parseRules(reader.getReadFile());
             parser.parseVariablesLine(reader.getVariablesLine());
         }
         catch (IOException e){

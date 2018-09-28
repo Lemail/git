@@ -22,6 +22,5 @@ public class ExpressionTxt {
     }
 
     public String getCheckedFact() {
-        return checkedFact;
-    }
+        return checkedFact; }
 }

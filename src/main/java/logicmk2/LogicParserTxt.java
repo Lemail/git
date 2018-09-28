@@ -2,20 +2,17 @@ package logicmk2;
 
 import logic.ExpressionTxt;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
 import java.util.*;
 
 public class LogicParserTxt {
-    private Set<String> variables = new TreeSet<String>();
+    private Set<String> variables = new TreeSet<>();
     private List<ExpressionTxt> expressions = new ArrayList<>();
     private boolean status = true;
     public LogicParserTxt(){
 
     }
 
-    public void parseFile(ArrayList<String> readFile){
+    public void parseRules(ArrayList<String> readFile){
         int lineCount = readFile.size();
         String[][] parsedFileByArrow = new String[lineCount][2];
         int expressionLines = 0;

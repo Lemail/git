@@ -4,7 +4,6 @@ import logic.ExpressionTxt;
 import org.junit.Test;
 
 import java.io.IOException;
-import java.util.HashSet;
 import java.util.Set;
 
 import static junit.framework.TestCase.assertEquals;
@@ -16,7 +15,7 @@ public class CorrectReaderTest {
         LogicParserTxt parser = new LogicParserTxt();
         try{
             reader.readFromFile();
-            parser.parseFile(reader.getReadFile());
+            parser.parseRules(reader.getReadFile());
             parser.parseVariablesLine(reader.getVariablesLine());
         }
         catch (IOException e){

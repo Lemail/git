@@ -3,11 +3,8 @@ package logicmk2;
 import logic.ExpressionTxt;
 import org.junit.Test;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.Set;
 
-import static junit.framework.TestCase.assertEquals;
 
 public class IncorrectFileNameTest {
     @Test
@@ -16,7 +13,7 @@ public class IncorrectFileNameTest {
         LogicParserTxt parser = new LogicParserTxt();
         try{
             reader.readFromFile();
-            parser.parseFile(reader.getReadFile());
+            parser.parseRules(reader.getReadFile());
             parser.parseVariablesLine(reader.getVariablesLine());
         }
         catch (IOException e){

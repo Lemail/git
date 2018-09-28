@@ -1,7 +1,6 @@
 package logicmk2;
 
 import logic.ExpressionTxt;
-import logic.LogicParser;
 
 import java.io.IOException;
 
@@ -11,7 +10,7 @@ public class Application {
         LogicParserTxt parser = new LogicParserTxt();
         try{
             reader.readFromFile();
-            parser.parseFile(reader.getReadFile());
+            parser.parseRules(reader.getReadFile());
             parser.parseVariablesLine(reader.getVariablesLine());
         }
         catch (IOException e){
