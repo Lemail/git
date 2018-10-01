@@ -1,7 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4453f04f-984e-480f-bd77-73d702927b3b" name="Default" comment="" />
+    <list default="true" id="4453f04f-984e-480f-bd77-73d702927b3b" name="Default" comment="Logic reader application mark III beta done">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_2_6_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_2_6_0.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jhlabs_filters_2_0_235.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jhlabs_filters_2_0_235.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_12.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_12.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_6.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_swinglabs_swing_worker_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_swinglabs_swing_worker_1_1.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_swinglabs_swingx_1_6_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_swinglabs_swingx_1_6_1.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_mysql_connector_java_8_0_12.xml" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_mysql_connector_java_8_0_12.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/correctinput.txt" afterPath="$PROJECT_DIR$/correctinput.txt" />
+      <change beforePath="$PROJECT_DIR$/facterror.txt" afterPath="$PROJECT_DIR$/facterror.txt" />
+      <change beforePath="$PROJECT_DIR$/factruleerror.txt" afterPath="$PROJECT_DIR$/factruleerror.txt" />
+      <change beforePath="$PROJECT_DIR$/input.txt" afterPath="$PROJECT_DIR$/input.txt" />
+      <change beforePath="$PROJECT_DIR$/inputfactcheck.txt" afterPath="$PROJECT_DIR$/inputfactcheck.txt" />
+      <change beforePath="$PROJECT_DIR$/missingequation.txt" afterPath="$PROJECT_DIR$/missingequation.txt" />
+      <change beforePath="$PROJECT_DIR$/operationerror.txt" afterPath="$PROJECT_DIR$/operationerror.txt" />
+      <change beforePath="$PROJECT_DIR$/ruleerror.txt" afterPath="$PROJECT_DIR$/ruleerror.txt" />
+      <change beforePath="$PROJECT_DIR$/skipline.txt" afterPath="$PROJECT_DIR$/skipline.txt" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ArrayHolder.java" afterPath="$PROJECT_DIR$/src/main/java/ArrayHolder.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Calculator.java" afterPath="$PROJECT_DIR$/src/main/java/Calculator.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/developer/Developer.java" afterPath="$PROJECT_DIR$/src/main/java/developer/Developer.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/developer/DeveloperLogic.java" afterPath="$PROJECT_DIR$/src/main/java/developer/DeveloperLogic.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Developer.java" afterPath="$PROJECT_DIR$/src/main/java/entity/Developer.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/DeveloperExample.java" afterPath="$PROJECT_DIR$/src/main/java/entity/DeveloperExample.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/User.java" afterPath="$PROJECT_DIR$/src/main/java/entity/User.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/UserExample.java" afterPath="$PROJECT_DIR$/src/main/java/entity/UserExample.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/logic/Application.java" afterPath="$PROJECT_DIR$/src/main/java/logic/Application.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/logic/LogicEvaluator.java" afterPath="$PROJECT_DIR$/src/main/java/logic/LogicEvaluator.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/logic/LogicParser.java" afterPath="$PROJECT_DIR$/src/main/java/logic/LogicParser.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/logic/LogicReader.java" afterPath="$PROJECT_DIR$/src/main/java/logic/LogicReader.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/logicmk2/Application.java" afterPath="$PROJECT_DIR$/src/main/java/logicmk2/Application.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/logicmk2/ExpressionTxt.java" afterPath="$PROJECT_DIR$/src/main/java/logicmk2/ExpressionTxt.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/logicmk2/LogicEvaluator.java" afterPath="$PROJECT_DIR$/src/main/java/logicmk2/LogicEvaluator.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/logicmk2/LogicParserTxt.java" afterPath="$PROJECT_DIR$/src/main/java/logicmk2/LogicParserTxt.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/logicmk2/LogicReader.java" afterPath="$PROJECT_DIR$/src/main/java/logicmk2/LogicReader.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/logicmk3/AndExpr.java" afterPath="$PROJECT_DIR$/src/main/java/logicmk3/AndExpr.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/logicmk3/Application.java" afterPath="$PROJECT_DIR$/src/main/java/logicmk3/Application.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/logicmk3/FactExpr.java" afterPath="$PROJECT_DIR$/src/main/java/logicmk3/FactExpr.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/logicmk3/IExpr.java" afterPath="$PROJECT_DIR$/src/main/java/logicmk3/IExpr.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/logicmk3/LogicAbstractTxtParser.java" afterPath="$PROJECT_DIR$/src/main/java/logicmk3/LogicAbstractTxtParser.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/logicmk3/OrExpr.java" afterPath="$PROJECT_DIR$/src/main/java/logicmk3/OrExpr.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/logicmk3/Rule.java" afterPath="$PROJECT_DIR$/src/main/java/logicmk3/Rule.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mapper/DeveloperMapper.java" afterPath="$PROJECT_DIR$/src/main/java/mapper/DeveloperMapper.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mapper/UserMapper.java" afterPath="$PROJECT_DIR$/src/main/java/mapper/UserMapper.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sql/Application.java" afterPath="$PROJECT_DIR$/src/main/java/sql/Application.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sql/DevelopersJdbcDemo.java" afterPath="$PROJECT_DIR$/src/main/java/sql/DevelopersJdbcDemo.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/swing/DrawTest.java" afterPath="$PROJECT_DIR$/src/main/java/swing/DrawTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/swing/FontTest.java" afterPath="$PROJECT_DIR$/src/main/java/swing/FontTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/swing/NotHelloWorld.java" afterPath="$PROJECT_DIR$/src/main/java/swing/NotHelloWorld.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/swing/SimpleFrameTest.java" afterPath="$PROJECT_DIR$/src/main/java/swing/SimpleFrameTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/swing/SizedFrameTest.java" afterPath="$PROJECT_DIR$/src/main/java/swing/SizedFrameTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/swing/calculator/CalculatorFrame.java" afterPath="$PROJECT_DIR$/src/main/java/swing/calculator/CalculatorFrame.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/swing/calculator/CalculatorPanel.java" afterPath="$PROJECT_DIR$/src/main/java/swing/calculator/CalculatorPanel.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/swing/components/CheckBoxFrame.java" afterPath="$PROJECT_DIR$/src/main/java/swing/components/CheckBoxFrame.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/swing/components/TextComponentFrame.java" afterPath="$PROJECT_DIR$/src/main/java/swing/components/TextComponentFrame.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/swing/events/ActionFrame.java" afterPath="$PROJECT_DIR$/src/main/java/swing/events/ActionFrame.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/swing/events/Application.java" afterPath="$PROJECT_DIR$/src/main/java/swing/events/Application.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/swing/events/ButtonFrame.java" afterPath="$PROJECT_DIR$/src/main/java/swing/events/ButtonFrame.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/swing/events/EventFrame.java" afterPath="$PROJECT_DIR$/src/main/java/swing/events/EventFrame.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/swing/events/MouseComponent.java" afterPath="$PROJECT_DIR$/src/main/java/swing/events/MouseComponent.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/swing/events/MouseFrame.java" afterPath="$PROJECT_DIR$/src/main/java/swing/events/MouseFrame.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/swing/events/PlafFrame.java" afterPath="$PROJECT_DIR$/src/main/java/swing/events/PlafFrame.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/DeveloperMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/DeveloperMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AnnotationTests.java" afterPath="$PROJECT_DIR$/src/test/java/AnnotationTests.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ArrayHolderTests.java" afterPath="$PROJECT_DIR$/src/test/java/ArrayHolderTests.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AssertionTests.java" afterPath="$PROJECT_DIR$/src/test/java/AssertionTests.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CalculatorAdvancedTests.java" afterPath="$PROJECT_DIR$/src/test/java/CalculatorAdvancedTests.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CalculatorTests.java" afterPath="$PROJECT_DIR$/src/test/java/CalculatorTests.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DeveloperTests.java" afterPath="$PROJECT_DIR$/src/test/java/DeveloperTests.java" />
+      <change beforePath="$PROJECT_DIR$/target.txt" afterPath="$PROJECT_DIR$/target.txt" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/DeveloperMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/DeveloperMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/test.txt" afterPath="$PROJECT_DIR$/test.txt" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,11 +89,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Application.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/logicmk2/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+            <state relative-caret-position="371">
+              <caret line="30" column="55" lean-forward="false" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -26,18 +102,18 @@
       <file leaf-file-name="LogicAbstractTxtParser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/logicmk3/LogicAbstractTxtParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1312">
-              <caret line="81" column="49" lean-forward="true" selection-start-line="81" selection-start-column="49" selection-end-line="81" selection-end-column="49" />
+            <state relative-caret-position="1377">
+              <caret line="81" column="49" lean-forward="false" selection-start-line="81" selection-start-column="49" selection-end-line="81" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LogicTests.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LogicTests.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/logicmk3/LogicTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+            <state relative-caret-position="204">
+              <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -238,8 +314,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -314,7 +391,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -776,9 +852,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CorrectReaderTest_correctReaderTest - 2018.10.01 at 16h 00m 58s.xml">
-      <configuration name="CorrectReaderTest.correctReaderTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="IncorrectFactInRuleTest_incorrectFactInRuleTest - 2018.10.01 at 16h 01m 32s.xml">
       <configuration name="IncorrectFactInRuleTest.incorrectFactInRuleTest" configurationId="JUnit" />
     </history-entry>
@@ -798,6 +871,9 @@
       <configuration name="LogicTests.logicTests" configurationId="JUnit" />
     </history-entry>
     <history-entry file="LogicTests_logicTests_(1) - 2018.10.01 at 16h 35m 31s.xml">
+      <configuration name="LogicTests.logicTests (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LogicTests_logicTests_(1) - 2018.10.01 at 16h 46m 00s.xml">
       <configuration name="LogicTests.logicTests (1)" configurationId="JUnit" />
     </history-entry>
     <history-entry file="SkipLineTest_skipLineTest - 2018.10.01 at 16h 04m 05s.xml">
@@ -827,14 +903,14 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28913045" sideWeight="0.5042644" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28913045" sideWeight="0.5042644" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12313433" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3206522" sideWeight="0.49093816" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3206522" sideWeight="0.49093816" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3228261" sideWeight="0.49093816" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28913045" sideWeight="0.49573562" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28913045" sideWeight="0.49573562" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11247335" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11353944" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -939,13 +1015,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/concurrent/CyclicBarrier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5450">
-          <caret line="138" column="13" lean-forward="false" selection-start-line="138" selection-start-column="13" selection-end-line="138" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/concurrent/Phaser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-12614">
@@ -1046,10 +1115,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="633" column="19" lean-forward="false" selection-start-line="633" selection-start-column="19" selection-end-line="633" selection-end-column="19" />
-          <folding>
-            <element signature="e#23072#23073#0" expanded="false" />
-            <element signature="e#23112#23113#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1057,7 +1122,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-7756">
           <caret line="69" column="13" lean-forward="false" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1102,18 +1166,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="1148" column="19" lean-forward="false" selection-start-line="1148" selection-start-column="19" selection-end-line="1148" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/logicmk2/NullArgumentTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="16" column="75" lean-forward="true" selection-start-line="16" selection-start-column="75" selection-end-line="16" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/logicmk2/NullArgumentTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/logicmk3/FactExpr.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1180,8 +1236,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/logicmk3/LogicAbstractTxtParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1312">
-          <caret line="81" column="49" lean-forward="true" selection-start-line="81" selection-start-column="49" selection-end-line="81" selection-end-column="49" />
+        <state relative-caret-position="1377">
+          <caret line="81" column="49" lean-forward="false" selection-start-line="81" selection-start-column="49" selection-end-line="81" selection-end-column="49" />
           <folding />
         </state>
       </provider>
@@ -1250,21 +1306,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/logicmk3/LogicTests.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/logicmk2/CorrectReaderTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/logicmk2/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="371">
+          <caret line="30" column="55" lean-forward="false" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logicmk2/Application.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/logicmk3/LogicTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-          <folding />
+        <state relative-caret-position="204">
+          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
