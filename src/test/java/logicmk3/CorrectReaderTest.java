@@ -1,4 +1,4 @@
-package logicmk2;
+package logicmk3;
 
 import logicmk3.IExpr;
 import logicmk3.LogicAbstractTxtParser;

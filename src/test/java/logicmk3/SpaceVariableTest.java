@@ -1,4 +1,4 @@
-package logicmk2;
+package logicmk3;
 
 import logicmk3.IExpr;
 import logicmk3.LogicAbstractTxtParser;
@@ -11,12 +11,12 @@ import java.util.Set;
 
 import static junit.framework.TestCase.assertEquals;
 
-public class SkipLineTest {
+public class SpaceVariableTest {
     @Test
-    public void skipLineTest(){
+    public void spaceVariableTest(){
         LogicAbstractTxtParser parser = new LogicAbstractTxtParser();
         try{
-            BufferedReader file = new BufferedReader(new FileReader("skipline.txt"));
+            BufferedReader file = new BufferedReader(new FileReader("facterror.txt"));
             String line;
             while ((line=file.readLine()) != null){
                 parser.parseLine(line);
@@ -43,6 +43,6 @@ public class SkipLineTest {
         }
         else System.out.println("Logical error(s) detected\nCheck the log above");
         Set<String> returnedResult = parser.getFacts();
-        assertEquals(returnedResult.toString(), "[A, B, D, E, F, H, O, T, THIS]");
+        assertEquals(returnedResult.toString(), "[A]");
     }
 }

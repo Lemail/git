@@ -1,4 +1,4 @@
-package logicmk2;
+package logicmk3;
 
 import logicmk3.IExpr;
 import logicmk3.LogicAbstractTxtParser;
@@ -11,12 +11,12 @@ import java.util.Set;
 
 import static junit.framework.TestCase.assertEquals;
 
-public class IncorrectOperationTest {
+public class IncorrectFactInRuleTest {
     @Test
-    public void incorrectOperationTest(){
+    public void incorrectFactInRuleTest(){
         LogicAbstractTxtParser parser = new LogicAbstractTxtParser();
         try{
-            BufferedReader file = new BufferedReader(new FileReader("operatorerror.txt"));
+            BufferedReader file = new BufferedReader(new FileReader("factruleerror.txt"));
             String line;
             while ((line=file.readLine()) != null){
                 parser.parseLine(line);
@@ -43,7 +43,6 @@ public class IncorrectOperationTest {
         }
         else System.out.println("Logical error(s) detected\nCheck the log above");
         Set<String> returnedResult = parser.getFacts();
-        assertEquals(returnedResult.toString(), "[A, B]");
-
+        assertEquals(returnedResult.toString(), "[THIS]");
     }
 }

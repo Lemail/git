@@ -1,4 +1,4 @@
-package logicmk2;
+package logicmk3;
 
 import logicmk3.IExpr;
 import logicmk3.LogicAbstractTxtParser;
@@ -11,12 +11,12 @@ import java.util.Set;
 
 import static junit.framework.TestCase.assertEquals;
 
-public class IncorrectRuleTest {
+public class InputFactCheck {
     @Test
-    public void incorrectOperationTest(){
+    public void inputFactCheck(){
         LogicAbstractTxtParser parser = new LogicAbstractTxtParser();
         try{
-            BufferedReader file = new BufferedReader(new FileReader("ruleerror.txt"));
+            BufferedReader file = new BufferedReader(new FileReader("inputfactcheck.txt"));
             String line;
             while ((line=file.readLine()) != null){
                 parser.parseLine(line);
@@ -43,6 +43,6 @@ public class IncorrectRuleTest {
         }
         else System.out.println("Logical error(s) detected\nCheck the log above");
         Set<String> returnedResult = parser.getFacts();
-        assertEquals(returnedResult.toString(), "[A, B]");
+        assertEquals(returnedResult.toString(), "[A, A3, Aa3, Aaaaa3, ____________________a, _________a3, _a3, a3]");
     }
 }

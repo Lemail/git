@@ -1,4 +1,4 @@
-package logicmk2;
+package logicmk3;
 
 import junit.framework.TestResult;
 import junit.framework.TestSuite;
