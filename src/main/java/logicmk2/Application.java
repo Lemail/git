@@ -9,7 +9,7 @@ public class Application {
         try{
             reader.readFromFile();
             parser.parseRules(reader.getReadFile());
-            parser.parseVariablesLine(reader.getVariablesLine());
+            parser.parseVariablesLine(reader.getFactLine());
         }
         catch (IOException e){
             System.out.println("Fatal error");
@@ -22,8 +22,8 @@ public class Application {
            return;
         }
         LogicEvaluator evaluator = new LogicEvaluator(parser.getVariables());
-        for (int i = 0; i < parser.getExpressions().size(); i++){
-            for (ExpressionTxt expression : parser.getExpressions()){
+        for (int i = 0; i < parser.getRules().size(); i++){
+            for (ExpressionTxt expression : parser.getRules()){
                 evaluator.evaluateExpression(expression);
             }
         }

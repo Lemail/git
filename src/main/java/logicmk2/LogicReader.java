@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class LogicReader {
     private String fileName;
     private ArrayList<String> readFile = new ArrayList<>();
-    private String variablesLine;
+    private String factLine;
 
     public LogicReader(String fileName){
         this.fileName = fileName;
@@ -24,9 +24,9 @@ public class LogicReader {
             }
 
             while ((readLine=file.readLine()) != null && !readLine.equals("")){
-                variablesLine = readLine;
+                factLine = readLine;
             }
-            if (variablesLine == null) throw new NullPointerException();
+            if (factLine == null) throw new NullPointerException();
         }
         catch (NullPointerException e){
             System.out.println("Fatal error while reading file");
@@ -45,8 +45,8 @@ public class LogicReader {
         return readFile;
     }
 
-    public String getVariablesLine() {
-        return variablesLine;
+    public String getFactLine() {
+        return factLine;
     }
 
     public String getFileName() {

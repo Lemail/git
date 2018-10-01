@@ -3,8 +3,8 @@ package logicmk2;
 import java.util.*;
 
 public class LogicParserTxt {
-    private Set<String> variables = new TreeSet<>();
-    private List<ExpressionTxt> expressions = new ArrayList<>();
+    private Set<String> inputFacts = new TreeSet<>();
+    private List<ExpressionTxt> rules = new ArrayList<>();
     private boolean status = true;
     public LogicParserTxt(){
 
@@ -107,8 +107,8 @@ public class LogicParserTxt {
             int variableStart = 0;
             char[] delimiter = {'&', '|'};
             char[] expressionArray = parsedFileByArrow[currentLine][0].toCharArray();
-            List<String> variableList = new ArrayList<>();
-            List<String> expressionList = new ArrayList<>();
+            List<String> expression = new ArrayList<>();
+            List<String> operatorList = new ArrayList<>();
             try{
                 for (int i = 0; i < expressionArray.length; i++){
                     if (i != expressionArray.length - 1){
@@ -116,7 +116,7 @@ public class LogicParserTxt {
                                 ((expressionArray[i] == delimiter[0]) || (expressionArray[i] == delimiter[1]))){
                             String addVariable = buildVariable(expressionArray, variableStart, i - 1).trim();
                             if (addVariable.matches("([_]+[a-zA-Z]+[\\w]*)|([a-zA-Z]+[\\w]*)")){
-                                variableList.add(addVariable);
+                                expression.add(addVariable);
                             }
                             else{
                                 if (addVariable.equals("")){
@@ -139,7 +139,7 @@ public class LogicParserTxt {
                         if ((expressionArray[i] == delimiter[0])  || ((expressionArray[i] == delimiter[1]))){
                             if (((expressionArray[i] == delimiter[0]) && (expressionArray[i+1] == delimiter[0])) ||
                                     ((expressionArray[i] == delimiter[1]) && (expressionArray[i+1] == delimiter[1]))){
-                                expressionList.add(buildVariable(expressionArray,  i, i + 1).trim());
+                                operatorList.add(buildVariable(expressionArray,  i, i + 1).trim());
                                 i++;
                             }
                             else{
@@ -157,7 +157,7 @@ public class LogicParserTxt {
                     else{
                         String addVariable = buildVariable(expressionArray, variableStart, expressionArray.length - 1).trim();
                         if (addVariable.matches("([_]+[a-zA-Z]+[\\w]*)|([a-zA-Z]+[\\w]*)")){
-                            variableList.add(buildVariable(expressionArray, variableStart, expressionArray.length - 1).trim());
+                            expression.add(buildVariable(expressionArray, variableStart, expressionArray.length - 1).trim());
                         }
                         else{
                             if (addVariable.equals("")){
@@ -176,7 +176,7 @@ public class LogicParserTxt {
 
                         }
                     }
-                    expressions.add(new ExpressionTxt(variableList, expressionList, parsedFileByArrow[currentLine][1]));
+                    rules.add(new ExpressionTxt(expression, operatorList, parsedFileByArrow[currentLine][1]));
                 }
             }
             catch (IndexOutOfBoundsException ignored){
@@ -190,8 +190,8 @@ public class LogicParserTxt {
         Scanner line = new Scanner(variablesLine).useDelimiter(",");
         while (line.hasNext()) {
             String current = line.next().trim();
-            if (current.matches("([_]+[a-zA-Z]+[\\w]*)|([a-zA-Z]+[\\w]*)"))
-                variables.add(current);
+            if (current.matches("[_]*[\\p{Alpha}]+[\\w]*"))
+                inputFacts.add(current);
             else{
                 System.out.println("Error in fact: "+current);
                 System.out.println("Unsupported symbol");
@@ -210,11 +210,11 @@ public class LogicParserTxt {
     }
 
     public Set<String> getVariables() {
-        return variables;
+        return inputFacts;
     }
 
-    public List<ExpressionTxt> getExpressions() {
-        return expressions;
+    public List<ExpressionTxt> getRules() {
+        return rules;
     }
 
     public boolean isStatus() {
