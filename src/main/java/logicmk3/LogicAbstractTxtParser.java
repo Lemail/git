@@ -51,7 +51,13 @@ public class LogicAbstractTxtParser {
                         }
                         else{
                             String resultingFact = line.substring(line.lastIndexOf("->")+2,line.length());
-                            if (resultingFact.matches("[_]*[\\p{Alpha}]+[\\w]*")){
+                            if (!resultingFact.matches("[_]*[\\p{Alpha}]+[\\w]*")){
+                                System.out.println("Error in resulting fact "+resultingFact+" (line"+lines+")");
+                                System.out.println("Unsupported symbol");
+                                System.out.println();
+                                status = false;
+                            }
+                            else {
                                 Rule rule = new Rule();
                                 rules.add(rule);
                                 rule.setResultingFact(resultingFact);
@@ -94,7 +100,7 @@ public class LogicAbstractTxtParser {
                                     }
                                     else {
                                         if (ruleString.matches("[_]*[\\p{Alpha}]+[\\w]*"))
-                                        rule.setRule(new FactExpr(this.facts, ruleString));
+                                            rule.setRule(new FactExpr(this.facts, ruleString));
                                         else {
                                             System.out.println("Error in fact "+ruleString+"(line "+lines+")");
                                             System.out.println("Unsupported symbol");
@@ -103,12 +109,6 @@ public class LogicAbstractTxtParser {
                                         }
                                     }
                                 }
-                            }
-                            else {
-                                System.out.println("Error in resulting fact "+resultingFact+" (line"+lines+")");
-                                System.out.println("Unsupported symbol");
-                                System.out.println();
-                                status = false;
                             }
 
                         }
