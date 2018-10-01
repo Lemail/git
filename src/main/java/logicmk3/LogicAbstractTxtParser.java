@@ -97,7 +97,7 @@ public class LogicAbstractTxtParser {
                                         rule.setRule(new FactExpr(this.facts, ruleString));
                                         else {
                                             System.out.println("Error in fact "+ruleString+"(line "+lines+")");
-                                            System.out.println("Invalid fact");
+                                            System.out.println("Unsupported symbol");
                                             System.out.println();
                                             status = false;
                                         }
@@ -105,7 +105,9 @@ public class LogicAbstractTxtParser {
                                 }
                             }
                             else {
-                                System.out.println("Check last else");
+                                System.out.println("Error in resulting fact "+resultingFact+" (line"+lines+")");
+                                System.out.println("Unsupported symbol");
+                                System.out.println();
                                 status = false;
                             }
 
@@ -188,5 +190,13 @@ public class LogicAbstractTxtParser {
 
     public List<IExpr> getRules() {
         return rules;
+    }
+
+    public boolean isDelimiterFound() {
+        return delimiterFound;
+    }
+
+    public String getDelimiter() {
+        return delimiter;
     }
 }

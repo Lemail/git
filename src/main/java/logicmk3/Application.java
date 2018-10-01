@@ -24,6 +24,15 @@ public class Application {
             System.out.println("Missing file parameter");
            return;
         }
+        if (!parser.isDelimiterFound()){
+            System.out.println("Fatal error");
+            System.out.println("Invalid delimiter in file "+args[0]);
+            System.out.println("Expected delimiter:");
+            System.out.println(parser.getDelimiter());
+            System.out.println();
+            return;
+        }
+
         if (parser.isStatus()){
             for (int i = 0; i < parser.getRules().size(); i++){
                 for (IExpr expression : parser.getRules()){
