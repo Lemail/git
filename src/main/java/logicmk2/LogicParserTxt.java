@@ -1,4 +1,5 @@
 package logicmk2;
+//TODO regex check
 
 import java.util.*;
 
@@ -18,7 +19,7 @@ public class LogicParserTxt {
         for (String line : readFile){
             String delimiter = "----------------------------------------------------------------";
             if (line.equals(delimiter)) break;
-            if ((!line.equals("")) && (!line.matches("[\\s]+"))){
+            if (!line.equals("") && !line.matches("[\\s]+")){
                 if (line.substring(0, line.indexOf(">")+1).trim().equals("->")){
                     System.out.println("Error in rule "+line.trim()+" (line "+(expressionLines + 1)+")");
                     System.out.println("Invalid rule");
@@ -52,6 +53,7 @@ public class LogicParserTxt {
                             System.out.println();
                             skipLines.add(expressionLines);
                             status = false;
+                            continue;
                         }
 
                         if (ruleVariable.matches("[a-zA-Z_]*[\\w]")){
@@ -155,7 +157,7 @@ public class LogicParserTxt {
                     }
                     else{
                         String addVariable = buildVariable(expressionArray, variableStart, expressionArray.length - 1).trim();
-                        if (addVariable.matches("[a-zA-Z_]*[\\w]")){
+                        if (addVariable.matches("[a-zA-Z_][\\w]*")){
                             variableList.add(buildVariable(expressionArray, variableStart, expressionArray.length - 1).trim());
                         }
                         else{
@@ -189,7 +191,7 @@ public class LogicParserTxt {
         Scanner line = new Scanner(variablesLine).useDelimiter(",");
         while (line.hasNext()) {
             String current = line.next().trim();
-            if (current.matches("[a-zA-Z_]*[\\w]"))
+            if (current.matches("[a-zA-Z_][\\w]*"))
                 variables.add(current);
             else{
                 System.out.println("Error in fact: "+current);
