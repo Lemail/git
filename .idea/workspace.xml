@@ -3,22 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4453f04f-984e-480f-bd77-73d702927b3b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/correctinput.txt" afterPath="$PROJECT_DIR$/correctinput.txt" />
-      <change beforePath="$PROJECT_DIR$/facterror.txt" afterPath="$PROJECT_DIR$/facterror.txt" />
-      <change beforePath="$PROJECT_DIR$/factruleerror.txt" afterPath="$PROJECT_DIR$/factruleerror.txt" />
-      <change beforePath="$PROJECT_DIR$/input.txt" afterPath="$PROJECT_DIR$/input.txt" />
-      <change beforePath="$PROJECT_DIR$/inputfactcheck.txt" afterPath="$PROJECT_DIR$/inputfactcheck.txt" />
-      <change beforePath="$PROJECT_DIR$/missingequation.txt" afterPath="$PROJECT_DIR$/missingequation.txt" />
-      <change beforePath="$PROJECT_DIR$/operationerror.txt" afterPath="$PROJECT_DIR$/operationerror.txt" />
-      <change beforePath="$PROJECT_DIR$/ruleerror.txt" afterPath="$PROJECT_DIR$/ruleerror.txt" />
-      <change beforePath="$PROJECT_DIR$/skipline.txt" afterPath="$PROJECT_DIR$/skipline.txt" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logicmk3/Application.java" afterPath="$PROJECT_DIR$/src/main/java/logicmk3/Application.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logicmk3/LogicAbstractTxtParser.java" afterPath="$PROJECT_DIR$/src/main/java/logicmk3/LogicAbstractTxtParser.java" />
-      <change beforePath="$PROJECT_DIR$/target.txt" afterPath="$PROJECT_DIR$/target.txt" />
       <change beforePath="$PROJECT_DIR$/target/classes/logicmk3/Application.class" afterPath="$PROJECT_DIR$/target/classes/logicmk3/Application.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/logicmk3/LogicAbstractTxtParser.class" afterPath="$PROJECT_DIR$/target/classes/logicmk3/LogicAbstractTxtParser.class" />
       <change beforePath="$PROJECT_DIR$/target/study-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/study-1.0-SNAPSHOT.jar" />
-      <change beforePath="$PROJECT_DIR$/test.txt" afterPath="$PROJECT_DIR$/test.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -866,7 +853,14 @@
       <option name="project" value="LOCAL" />
       <updated>1538389039066</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Logic reader application mark III beta done">
+      <created>1538389418325</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1538389418325</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TestHistory">
