@@ -3,8 +3,8 @@ package logicmk2;
 import java.util.*;
 
 public class LogicParserTxt {
-    private Set<String> variables = new TreeSet<>();
-    private List<ExpressionTxt> expressions = new ArrayList<>();
+    private Set<String> inputFacts = new TreeSet<>();
+    private List<ExpressionTxt> rules = new ArrayList<>();
     private boolean status = true;
     public LogicParserTxt(){
 
@@ -18,7 +18,7 @@ public class LogicParserTxt {
         for (String line : readFile){
             String delimiter = "----------------------------------------------------------------";
             if (line.equals(delimiter)) break;
-            if ((!line.equals("")) && (!line.matches("[\\s]+"))){
+            if (!line.equals("") && !line.matches("[\\s]+")){
                 if (line.substring(0, line.indexOf(">")+1).trim().equals("->")){
                     System.out.println("Error in rule "+line.trim()+" (line "+(expressionLines + 1)+")");
                     System.out.println("Invalid rule");
@@ -52,9 +52,10 @@ public class LogicParserTxt {
                             System.out.println();
                             skipLines.add(expressionLines);
                             status = false;
+                            continue;
                         }
 
-                        if (ruleVariable.matches("[a-zA-Z_]*[\\w]")){
+                        if (ruleVariable.matches("([_]+[a-zA-Z]+[\\w]*)|([a-zA-Z]+[\\w]*)")){
                             parsedFileByArrow[expressionLines][1] = ruleVariable;
                         }
                         else{
@@ -106,16 +107,16 @@ public class LogicParserTxt {
             int variableStart = 0;
             char[] delimiter = {'&', '|'};
             char[] expressionArray = parsedFileByArrow[currentLine][0].toCharArray();
-            List<String> variableList = new ArrayList<>();
-            List<String> expressionList = new ArrayList<>();
+            List<String> expression = new ArrayList<>();
+            List<String> operatorList = new ArrayList<>();
             try{
                 for (int i = 0; i < expressionArray.length; i++){
                     if (i != expressionArray.length - 1){
                         if (((expressionArray[i+1] == delimiter[0]) || (expressionArray[i+1] == delimiter[1])) &&
                                 ((expressionArray[i] == delimiter[0]) || (expressionArray[i] == delimiter[1]))){
                             String addVariable = buildVariable(expressionArray, variableStart, i - 1).trim();
-                            if (addVariable.matches("[a-zA-Z_]*[\\w]")){
-                                variableList.add(addVariable);
+                            if (addVariable.matches("([_]+[a-zA-Z]+[\\w]*)|([a-zA-Z]+[\\w]*)")){
+                                expression.add(addVariable);
                             }
                             else{
                                 if (addVariable.equals("")){
@@ -138,7 +139,7 @@ public class LogicParserTxt {
                         if ((expressionArray[i] == delimiter[0])  || ((expressionArray[i] == delimiter[1]))){
                             if (((expressionArray[i] == delimiter[0]) && (expressionArray[i+1] == delimiter[0])) ||
                                     ((expressionArray[i] == delimiter[1]) && (expressionArray[i+1] == delimiter[1]))){
-                                expressionList.add(buildVariable(expressionArray,  i, i + 1).trim());
+                                operatorList.add(buildVariable(expressionArray,  i, i + 1).trim());
                                 i++;
                             }
                             else{
@@ -155,8 +156,8 @@ public class LogicParserTxt {
                     }
                     else{
                         String addVariable = buildVariable(expressionArray, variableStart, expressionArray.length - 1).trim();
-                        if (addVariable.matches("[a-zA-Z_]*[\\w]")){
-                            variableList.add(buildVariable(expressionArray, variableStart, expressionArray.length - 1).trim());
+                        if (addVariable.matches("([_]+[a-zA-Z]+[\\w]*)|([a-zA-Z]+[\\w]*)")){
+                            expression.add(buildVariable(expressionArray, variableStart, expressionArray.length - 1).trim());
                         }
                         else{
                             if (addVariable.equals("")){
@@ -175,7 +176,7 @@ public class LogicParserTxt {
 
                         }
                     }
-                    expressions.add(new ExpressionTxt(variableList, expressionList, parsedFileByArrow[currentLine][1]));
+                    rules.add(new ExpressionTxt(expression, operatorList, parsedFileByArrow[currentLine][1]));
                 }
             }
             catch (IndexOutOfBoundsException ignored){
@@ -189,8 +190,8 @@ public class LogicParserTxt {
         Scanner line = new Scanner(variablesLine).useDelimiter(",");
         while (line.hasNext()) {
             String current = line.next().trim();
-            if (current.matches("[a-zA-Z_]*[\\w]"))
-                variables.add(current);
+            if (current.matches("[_]*[\\p{Alpha}]+[\\w]*"))
+                inputFacts.add(current);
             else{
                 System.out.println("Error in fact: "+current);
                 System.out.println("Unsupported symbol");
@@ -209,11 +210,11 @@ public class LogicParserTxt {
     }
 
     public Set<String> getVariables() {
-        return variables;
+        return inputFacts;
     }
 
-    public List<ExpressionTxt> getExpressions() {
-        return expressions;
+    public List<ExpressionTxt> getRules() {
+        return rules;
     }
 
     public boolean isStatus() {

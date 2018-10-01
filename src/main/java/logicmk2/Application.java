@@ -9,21 +9,21 @@ public class Application {
         try{
             reader.readFromFile();
             parser.parseRules(reader.getReadFile());
-            parser.parseVariablesLine(reader.getVariablesLine());
+            parser.parseVariablesLine(reader.getFactLine());
         }
         catch (IOException e){
             System.out.println("Fatal error");
             System.out.println("No such file found \""+reader.getFileName()+"\"");
-            System.exit(-1);
+            return;
         }
         catch (NullPointerException e){
             System.out.println("Fatal error");
             System.out.println("Missing file parameter");
-            System.exit(-1);
+           return;
         }
         LogicEvaluator evaluator = new LogicEvaluator(parser.getVariables());
-        for (int i = 0; i < parser.getExpressions().size(); i++){
-            for (ExpressionTxt expression : parser.getExpressions()){
+        for (int i = 0; i < parser.getRules().size(); i++){
+            for (ExpressionTxt expression : parser.getRules()){
                 evaluator.evaluateExpression(expression);
             }
         }
@@ -32,7 +32,5 @@ public class Application {
             System.out.println(result);
         }
         else System.out.println("Logical error(s) detected\nCheck the log above");
-
-
     }
 }

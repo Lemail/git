@@ -1,33 +1,33 @@
 package logicmk2;
 
+import logicmk3.LogicAbstractTxtParser;
 import org.junit.Test;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
 
 
 public class IncorrectFileNameTest {
     @Test
     public void incorrectFileNameTest() {
-        LogicReader reader = new LogicReader("nosuchfile.txt");
-        LogicParserTxt parser = new LogicParserTxt();
+        LogicAbstractTxtParser parser = new LogicAbstractTxtParser();
         try{
-            reader.readFromFile();
-            parser.parseRules(reader.getReadFile());
-            parser.parseVariablesLine(reader.getVariablesLine());
+            BufferedReader file = new BufferedReader(new FileReader("nosuchfile.txt"));
+            String line;
+            while ((line=file.readLine()) != null){
+                parser.parseLine(line);
+            }
         }
         catch (IOException e){
             System.out.println("Fatal error");
-            System.out.println("No such file found \""+reader.getFileName()+"\"");
+            System.out.println("No such file found ");
+            return;
         }
         catch (NullPointerException e){
             System.out.println("Fatal error");
-            System.out.println("File name missing");
-        }
-        LogicEvaluator evaluator = new LogicEvaluator(parser.getVariables());
-        for (int i = 0; i < parser.getExpressions().size(); i++) {
-            for (ExpressionTxt expression : parser.getExpressions()) {
-                evaluator.evaluateExpression(expression);
-            }
+            System.out.println("Missing file parameter");
+            return;
         }
     }
 }

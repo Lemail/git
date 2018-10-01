@@ -11,12 +11,12 @@ import java.util.Set;
 
 import static junit.framework.TestCase.assertEquals;
 
-public class CorrectReaderTest {
+public class InputFactCheck {
     @Test
-    public void correctReaderTest(){
+    public void inputFactCheck(){
         LogicAbstractTxtParser parser = new LogicAbstractTxtParser();
         try{
-            BufferedReader file = new BufferedReader(new FileReader("correctinput.txt"));
+            BufferedReader file = new BufferedReader(new FileReader("inputfactcheck.txt"));
             String line;
             while ((line=file.readLine()) != null){
                 parser.parseLine(line);
@@ -43,7 +43,6 @@ public class CorrectReaderTest {
         }
         else System.out.println("Logical error(s) detected\nCheck the log above");
         Set<String> returnedResult = parser.getFacts();
-        assertEquals(returnedResult.toString(), "[A, C, D, E, S, VV]");
-
+        assertEquals(returnedResult.toString(), "[A, A3, Aa3, Aaaaa3, ____________________a, _________a3, _a3, a3]");
     }
 }
