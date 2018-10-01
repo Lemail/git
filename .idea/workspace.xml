@@ -3,6 +3,54 @@
   <component name="ChangeListManager">
     <list default="true" id="4453f04f-984e-480f-bd77-73d702927b3b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/target/correctinput.txt" afterPath="$PROJECT_DIR$/target/correctinput.txt" />
+      <change beforePath="$PROJECT_DIR$/target/facterror.txt" afterPath="$PROJECT_DIR$/target/facterror.txt" />
+      <change beforePath="$PROJECT_DIR$/target/factruleerror.txt" afterPath="$PROJECT_DIR$/target/factruleerror.txt" />
+      <change beforePath="$PROJECT_DIR$/target/input.txt" afterPath="$PROJECT_DIR$/target/input.txt" />
+      <change beforePath="$PROJECT_DIR$/target/inputfactcheck.txt" afterPath="$PROJECT_DIR$/target/inputfactcheck.txt" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
+      <change beforePath="$PROJECT_DIR$/target/operationerror.txt" afterPath="$PROJECT_DIR$/target/operationerror.txt" />
+      <change beforePath="$PROJECT_DIR$/target/ruleerror.txt" afterPath="$PROJECT_DIR$/target/ruleerror.txt" />
+      <change beforePath="$PROJECT_DIR$/target/skipline.txt" afterPath="$PROJECT_DIR$/target/skipline.txt" />
+      <change beforePath="$PROJECT_DIR$/target/study-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/study-1.0-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuiteDemo.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-logic.CorrectReaderTest.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-logic.IncorrectFactInRuleTest.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-logic.IncorrectFileNameTest.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-logic.IncorrectOperationTest.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-logic.IncorrectRuleTest.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-logic.NullArgumentTest.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-logic.SkipLineTest.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-logic.SpaceVariableTest.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-logicmk2.CorrectReaderTest.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-logicmk2.IncorrectFactInRuleTest.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-logicmk2.IncorrectFileNameTest.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-logicmk2.IncorrectOperationTest.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-logicmk2.IncorrectRuleTest.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-logicmk2.NullArgumentTest.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-logicmk2.SkipLineTest.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-logicmk2.SpaceVariableTest.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuiteDemo.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/logic.CorrectReaderTest.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/logic.IncorrectFactInRuleTest.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/logic.IncorrectFileNameTest.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/logic.IncorrectOperationTest.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/logic.IncorrectRuleTest.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/logic.NullArgumentTest.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/logic.SkipLineTest.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/logic.SpaceVariableTest.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/logicmk2.CorrectReaderTest.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/logicmk2.IncorrectFactInRuleTest.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/logicmk2.IncorrectFileNameTest.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/logicmk2.IncorrectOperationTest.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/logicmk2.IncorrectRuleTest.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/logicmk2.NullArgumentTest.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/logicmk2.SkipLineTest.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/logicmk2.SpaceVariableTest.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/target.txt" afterPath="$PROJECT_DIR$/target/target.txt" />
+      <change beforePath="$PROJECT_DIR$/target/test.txt" afterPath="$PROJECT_DIR$/target/test.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -18,7 +66,7 @@
       <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/logicmk2/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
+            <state relative-caret-position="510">
               <caret line="30" column="55" lean-forward="false" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
               <folding />
             </state>
@@ -38,8 +86,8 @@
       <file leaf-file-name="LogicTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/logicmk3/LogicTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -50,8 +98,8 @@
       <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="779">
-              <caret line="1364" column="10" lean-forward="true" selection-start-line="1364" selection-start-column="10" selection-end-line="1364" selection-end-column="10" />
+            <state relative-caret-position="541">
+              <caret line="1416" column="10" lean-forward="false" selection-start-line="1416" selection-start-column="10" selection-end-line="1416" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -250,10 +298,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -332,6 +377,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -803,7 +851,14 @@
       <option name="project" value="LOCAL" />
       <updated>1538387300362</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Logic reader application mark III beta done">
+      <created>1538387488645</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1538387488645</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -853,28 +908,28 @@
       <window_info id="Key Promoter X" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3228261" sideWeight="0.5154584" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3228261" sideWeight="0.5197228" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12313433" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3206522" sideWeight="0.48880598" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3228261" sideWeight="0.48454157" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3228261" sideWeight="0.48027718" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3206522" sideWeight="0.48667377" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28913045" sideWeight="0.4914712" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11353944" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.114605546" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1193,7 +1248,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1256,7 +1310,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/logicmk2/CorrectReaderTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/logicmk2/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
+        <state relative-caret-position="510">
           <caret line="30" column="55" lean-forward="false" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
           <folding />
         </state>
@@ -1264,8 +1318,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/logicmk3/LogicTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="255">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1274,8 +1328,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="1364" column="10" lean-forward="true" selection-start-line="1364" selection-start-column="10" selection-end-line="1364" selection-end-column="10" />
+        <state relative-caret-position="541">
+          <caret line="1416" column="10" lean-forward="false" selection-start-line="1416" selection-start-column="10" selection-end-line="1416" selection-end-column="10" />
           <folding />
         </state>
       </provider>

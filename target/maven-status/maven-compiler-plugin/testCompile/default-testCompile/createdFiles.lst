@@ -1,6 +1,15 @@
+logicmk3\IncorrectFactInRuleTest.class
+logicmk3\LogicTests.class
 AnnotationTests.class
+logicmk3\InputFactCheck.class
+logicmk3\IncorrectOperationTest.class
+logicmk3\CorrectReaderTest.class
 CalculatorAdvancedTests.class
+logicmk3\IncorrectRuleTest.class
 ArrayHolderTests.class
 AssertionTests.class
 CalculatorTests.class
+logicmk3\SkipLineTest.class
 DeveloperTests.class
+logicmk3\IncorrectFileNameTest.class
+logicmk3\SpaceVariableTest.class
