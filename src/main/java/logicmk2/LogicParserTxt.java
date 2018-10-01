@@ -1,5 +1,4 @@
 package logicmk2;
-//TODO regex check
 
 import java.util.*;
 
@@ -56,7 +55,7 @@ public class LogicParserTxt {
                             continue;
                         }
 
-                        if (ruleVariable.matches("[a-zA-Z_]*[\\w]")){
+                        if (ruleVariable.matches("([_]+[a-zA-Z]+[\\w]*)|([a-zA-Z]+[\\w]*)")){
                             parsedFileByArrow[expressionLines][1] = ruleVariable;
                         }
                         else{
@@ -116,7 +115,7 @@ public class LogicParserTxt {
                         if (((expressionArray[i+1] == delimiter[0]) || (expressionArray[i+1] == delimiter[1])) &&
                                 ((expressionArray[i] == delimiter[0]) || (expressionArray[i] == delimiter[1]))){
                             String addVariable = buildVariable(expressionArray, variableStart, i - 1).trim();
-                            if (addVariable.matches("[a-zA-Z_]*[\\w]")){
+                            if (addVariable.matches("([_]+[a-zA-Z]+[\\w]*)|([a-zA-Z]+[\\w]*)")){
                                 variableList.add(addVariable);
                             }
                             else{
@@ -157,7 +156,7 @@ public class LogicParserTxt {
                     }
                     else{
                         String addVariable = buildVariable(expressionArray, variableStart, expressionArray.length - 1).trim();
-                        if (addVariable.matches("[a-zA-Z_][\\w]*")){
+                        if (addVariable.matches("([_]+[a-zA-Z]+[\\w]*)|([a-zA-Z]+[\\w]*)")){
                             variableList.add(buildVariable(expressionArray, variableStart, expressionArray.length - 1).trim());
                         }
                         else{
@@ -191,7 +190,7 @@ public class LogicParserTxt {
         Scanner line = new Scanner(variablesLine).useDelimiter(",");
         while (line.hasNext()) {
             String current = line.next().trim();
-            if (current.matches("[a-zA-Z_][\\w]*"))
+            if (current.matches("([_]+[a-zA-Z]+[\\w]*)|([a-zA-Z]+[\\w]*)"))
                 variables.add(current);
             else{
                 System.out.println("Error in fact: "+current);

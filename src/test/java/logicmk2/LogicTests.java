@@ -6,7 +6,7 @@ import org.junit.Test;
 public class LogicTests {
     private TestSuite testSuite = new TestSuite(CorrectReaderTest.class, IncorrectFactInRuleTest.class,
             IncorrectFileNameTest.class, IncorrectOperationTest.class, IncorrectRuleTest.class, NullArgumentTest.class,
-            SkipLineTest.class, SpaceVariableTest.class);
+            SkipLineTest.class, SpaceVariableTest.class, InputFactCheck.class);
     private TestResult result = new TestResult();
 
     @Test

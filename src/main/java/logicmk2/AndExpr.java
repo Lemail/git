@@ -1,4 +1,11 @@
 package logicmk2;
 
-public class AndExpr {
+import java.util.List;
+
+public class AndExpr implements IExpr{
+    List<IExpr> parts;
+
+    public boolean eval() {
+        return false;
+    }
 }

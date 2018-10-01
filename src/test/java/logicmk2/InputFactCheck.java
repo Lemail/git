@@ -1,10 +1,16 @@
 package logicmk2;
 
-import java.io.IOException;
+import org.junit.Test;
 
-public class Application {
-    public static void main(String[] args) {
-        LogicReader reader = new LogicReader(args[0]);
+import java.io.IOException;
+import java.util.Set;
+
+import static junit.framework.TestCase.assertEquals;
+
+public class InputFactCheck {
+    @Test
+    public void inputFactCheck(){
+        LogicReader reader = new LogicReader("inputfactcheck.txt");
         LogicParserTxt parser = new LogicParserTxt();
         try{
             reader.readFromFile();
@@ -19,7 +25,7 @@ public class Application {
         catch (NullPointerException e){
             System.out.println("Fatal error");
             System.out.println("Missing file parameter");
-           return;
+            return;
         }
         LogicEvaluator evaluator = new LogicEvaluator(parser.getVariables());
         for (int i = 0; i < parser.getExpressions().size(); i++){
@@ -27,10 +33,7 @@ public class Application {
                 evaluator.evaluateExpression(expression);
             }
         }
-        if (parser.isStatus()){
-            for (String result : evaluator.getResult())
-            System.out.println(result);
-        }
-        else System.out.println("Logical error(s) detected\nCheck the log above");
+        Set<String> returnedResult = evaluator.getResult();
+        assertEquals(returnedResult.toString(), "[A, A3, Aa3, Aaaaa3, ____________________a, _________a3, _a3, a3]");
     }
 }
