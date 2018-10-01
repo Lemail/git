@@ -25,12 +25,12 @@ public class Application {
            return;
         }
         if (!parser.isDelimiterFound()){
-            System.out.println("Fatal error");
+            System.out.println("Reading error");
             System.out.println("Invalid delimiter in file "+args[0]);
             System.out.println("Expected delimiter:");
             System.out.println(parser.getDelimiter());
             System.out.println();
-            return;
+            parser.setStatus(false);
         }
 
         if (parser.isStatus()){

@@ -3,8 +3,22 @@
   <component name="ChangeListManager">
     <list default="true" id="4453f04f-984e-480f-bd77-73d702927b3b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/correctinput.txt" afterPath="$PROJECT_DIR$/correctinput.txt" />
+      <change beforePath="$PROJECT_DIR$/facterror.txt" afterPath="$PROJECT_DIR$/facterror.txt" />
+      <change beforePath="$PROJECT_DIR$/factruleerror.txt" afterPath="$PROJECT_DIR$/factruleerror.txt" />
+      <change beforePath="$PROJECT_DIR$/input.txt" afterPath="$PROJECT_DIR$/input.txt" />
+      <change beforePath="$PROJECT_DIR$/inputfactcheck.txt" afterPath="$PROJECT_DIR$/inputfactcheck.txt" />
+      <change beforePath="$PROJECT_DIR$/missingequation.txt" afterPath="$PROJECT_DIR$/missingequation.txt" />
+      <change beforePath="$PROJECT_DIR$/operationerror.txt" afterPath="$PROJECT_DIR$/operationerror.txt" />
+      <change beforePath="$PROJECT_DIR$/ruleerror.txt" afterPath="$PROJECT_DIR$/ruleerror.txt" />
+      <change beforePath="$PROJECT_DIR$/skipline.txt" afterPath="$PROJECT_DIR$/skipline.txt" />
       <change beforePath="$PROJECT_DIR$/src/main/java/logicmk3/Application.java" afterPath="$PROJECT_DIR$/src/main/java/logicmk3/Application.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/logicmk3/LogicAbstractTxtParser.java" afterPath="$PROJECT_DIR$/src/main/java/logicmk3/LogicAbstractTxtParser.java" />
+      <change beforePath="$PROJECT_DIR$/target.txt" afterPath="$PROJECT_DIR$/target.txt" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logicmk3/Application.class" afterPath="$PROJECT_DIR$/target/classes/logicmk3/Application.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logicmk3/LogicAbstractTxtParser.class" afterPath="$PROJECT_DIR$/target/classes/logicmk3/LogicAbstractTxtParser.class" />
+      <change beforePath="$PROJECT_DIR$/target/study-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/study-1.0-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/test.txt" afterPath="$PROJECT_DIR$/test.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,8 +34,8 @@
       <file leaf-file-name="Application.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/logicmk3/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="46" lean-forward="false" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+            <state relative-caret-position="340">
+              <caret line="22" column="46" lean-forward="true" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -30,8 +44,8 @@
       <file leaf-file-name="LogicAbstractTxtParser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/logicmk3/LogicAbstractTxtParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1206">
-              <caret line="191" column="21" lean-forward="true" selection-start-line="191" selection-start-column="21" selection-end-line="191" selection-end-column="21" />
+            <state relative-caret-position="509">
+              <caret line="204" column="5" lean-forward="false" selection-start-line="204" selection-start-column="5" selection-end-line="204" selection-end-column="5" />
               <folding>
                 <element signature="e#8073#8074#0" expanded="true" />
                 <element signature="e#8102#8103#0" expanded="true" />
@@ -43,6 +57,8 @@
                 <element signature="e#8310#8311#0" expanded="true" />
                 <element signature="e#8346#8347#0" expanded="true" />
                 <element signature="e#8378#8379#0" expanded="true" />
+                <element signature="e#8423#8424#0" expanded="true" />
+                <element signature="e#8459#8460#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -236,8 +252,8 @@
         <option value="$PROJECT_DIR$/src/test/java/logicmk2/SpaceVariableTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/logicmk2/LogicTests.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/logicmk3/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/logicmk3/LogicAbstractTxtParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/logicmk3/Application.java" />
       </list>
     </option>
   </component>
@@ -843,7 +859,14 @@
       <option name="project" value="LOCAL" />
       <updated>1538387670114</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Logic reader application mark III beta done">
+      <created>1538389039066</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1538389039066</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -898,10 +921,10 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3206522" sideWeight="0.5154584" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3228261" sideWeight="0.521855" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12313433" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3228261" sideWeight="0.48027718" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3206522" sideWeight="0.48454157" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3228261" sideWeight="0.478145" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3206522" sideWeight="0.48454157" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28913045" sideWeight="0.4914712" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1304,8 +1327,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/logicmk3/LogicAbstractTxtParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1206">
-          <caret line="191" column="21" lean-forward="true" selection-start-line="191" selection-start-column="21" selection-end-line="191" selection-end-column="21" />
+        <state relative-caret-position="509">
+          <caret line="204" column="5" lean-forward="false" selection-start-line="204" selection-start-column="5" selection-end-line="204" selection-end-column="5" />
           <folding>
             <element signature="e#8073#8074#0" expanded="true" />
             <element signature="e#8102#8103#0" expanded="true" />
@@ -1317,14 +1340,16 @@
             <element signature="e#8310#8311#0" expanded="true" />
             <element signature="e#8346#8347#0" expanded="true" />
             <element signature="e#8378#8379#0" expanded="true" />
+            <element signature="e#8423#8424#0" expanded="true" />
+            <element signature="e#8459#8460#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/logicmk3/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="46" lean-forward="false" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+        <state relative-caret-position="340">
+          <caret line="22" column="46" lean-forward="true" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
           <folding />
         </state>
       </provider>

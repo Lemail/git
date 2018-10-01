@@ -199,4 +199,8 @@ public class LogicAbstractTxtParser {
     public String getDelimiter() {
         return delimiter;
     }
+
+    public void setStatus(boolean status) {
+        this.status = status;
+    }
 }
