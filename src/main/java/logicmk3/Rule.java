@@ -2,29 +2,28 @@ package logicmk3;
 
 import java.util.Set;
 
-public class Rule implements IExpr{
+public class Rule{
     private Set<String> facts;
-    private IExpr rule;
+    private IExpr rule = null;
     private String resultingFact;
-    private boolean evalState = false;
 
-    public boolean eval() {
-        evalState = rule.eval();
+    public Rule(Set<String> facts, String resultingFact){
+        this.facts = facts;
+        this.resultingFact = resultingFact;
+    }
+
+    public void eval() {
+        boolean evalState = rule.eval();
         if (evalState){
             facts.add(resultingFact);
         }
-        return evalState;
-    }
-
-    public void setResultingFact(String resultingFact) {
-        this.resultingFact = resultingFact;
     }
 
     public void setRule(IExpr rule) {
         this.rule = rule;
     }
 
-    public void setFacts(Set<String> facts) {
-        this.facts = facts;
+    public IExpr getRule() {
+        return rule;
     }
 }

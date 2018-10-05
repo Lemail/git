@@ -1,7 +1,5 @@
 package logicmk3;
 
-import logicmk3.IExpr;
-import logicmk3.LogicAbstractTxtParser;
 import org.junit.Test;
 
 import java.io.BufferedReader;
@@ -14,7 +12,8 @@ import static junit.framework.TestCase.assertEquals;
 public class InputFactCheck {
     @Test
     public void inputFactCheck(){
-        LogicAbstractTxtParser parser = new LogicAbstractTxtParser();
+        Model model;
+        LogicTxtParser parser = new LogicTxtParser();
         try{
             BufferedReader file = new BufferedReader(new FileReader("inputfactcheck.txt"));
             String line;
@@ -24,25 +23,21 @@ public class InputFactCheck {
         }
         catch (IOException e){
             System.out.println("Fatal error");
-            System.out.println("No such file found ");
+            System.out.println("No such file found");
             return;
         }
-        catch (NullPointerException e){
+        catch (IndexOutOfBoundsException e){
             System.out.println("Fatal error");
             System.out.println("Missing file parameter");
             return;
         }
-        if (parser.isStatus()){
-            for (int i = 0; i < parser.getRules().size(); i++){
-                for (IExpr expression : parser.getRules()){
-                    expression.eval();
-                }
-            }
-            for (String result : parser.getFacts())
-                System.out.println(result);
+
+        if ((model = parser.getResults()) != null){
+            model.eval();
+            Set<String> returnedResult = model.getFacts();
+            assertEquals(returnedResult.toString(), "[A, A3, Aa3, Aaaaa3, ____________________a, _________a3, _a3, a3]");
         }
         else System.out.println("Logical error(s) detected\nCheck the log above");
-        Set<String> returnedResult = parser.getFacts();
-        assertEquals(returnedResult.toString(), "[A, A3, Aa3, Aaaaa3, ____________________a, _________a3, _a3, a3]");
+        assertEquals(model, null);
     }
 }

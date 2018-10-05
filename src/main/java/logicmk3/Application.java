@@ -6,13 +6,15 @@ import java.io.IOException;
 
 public class Application {
     public static void main(String[] args) {
-        LogicAbstractTxtParser parser = new LogicAbstractTxtParser();
+        Model model;
+        LogicTxtParser parser = new LogicTxtParser();
         try{
             BufferedReader file = new BufferedReader(new FileReader(args[0]));
             String line;
             while ((line=file.readLine()) != null){
                 parser.parseLine(line);
             }
+            file.close();
         }
         catch (IOException e){
             System.out.println("Fatal error");
@@ -24,23 +26,16 @@ public class Application {
             System.out.println("Missing file parameter");
            return;
         }
-        if (!parser.isDelimiterFound()){
-            System.out.println("Reading error");
-            System.out.println("Invalid delimiter in file "+args[0]);
-            System.out.println("Expected delimiter:");
-            System.out.println(parser.getDelimiter());
-            System.out.println();
-            parser.setStatus(false);
-        }
 
-        if (parser.isStatus()){
-            for (int i = 0; i < parser.getRules().size(); i++){
-                for (IExpr expression : parser.getRules()){
-                    expression.eval();
-                }
+        if ((model = parser.getResults()) != null){
+            model.eval();
+            String result = "";
+            for (String fact : model.getFacts()){
+                if (result.equals("")) result += fact;
+                else result += ","+fact;
             }
-            for (String result : parser.getFacts())
-            System.out.println(result);
+                System.out.println(result);
+
         }
         else System.out.println("Logical error(s) detected\nCheck the log above");
     }

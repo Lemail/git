@@ -1,7 +1,5 @@
 package logicmk3;
 
-import logicmk3.IExpr;
-import logicmk3.LogicAbstractTxtParser;
 import org.junit.Test;
 
 import java.io.BufferedReader;
@@ -14,7 +12,8 @@ import static junit.framework.TestCase.assertEquals;
 public class IncorrectFactInRuleTest {
     @Test
     public void incorrectFactInRuleTest(){
-        LogicAbstractTxtParser parser = new LogicAbstractTxtParser();
+        Model model;
+        LogicTxtParser parser = new LogicTxtParser();
         try{
             BufferedReader file = new BufferedReader(new FileReader("factruleerror.txt"));
             String line;
@@ -24,25 +23,21 @@ public class IncorrectFactInRuleTest {
         }
         catch (IOException e){
             System.out.println("Fatal error");
-            System.out.println("No such file found ");
+            System.out.println("No such file found");
             return;
         }
-        catch (NullPointerException e){
+        catch (IndexOutOfBoundsException e){
             System.out.println("Fatal error");
             System.out.println("Missing file parameter");
             return;
         }
-        if (parser.isStatus()){
-            for (int i = 0; i < parser.getRules().size(); i++){
-                for (IExpr expression : parser.getRules()){
-                    expression.eval();
-                }
-            }
-            for (String result : parser.getFacts())
+
+        if ((model = parser.getResults()) != null){
+            model.eval();
+            for (String result : model.getFacts())
                 System.out.println(result);
         }
         else System.out.println("Logical error(s) detected\nCheck the log above");
-        Set<String> returnedResult = parser.getFacts();
-        assertEquals(returnedResult.toString(), "[THIS]");
+        assertEquals(model, null);
     }
 }

@@ -5,12 +5,12 @@ import java.util.List;
 
 public class OrExpr implements IExpr{
     private List<IExpr> parts = new ArrayList<>();
-    private boolean evalState = false;
 
     public OrExpr(){
     }
 
     public boolean eval() {
+        boolean evalState = false;
         for (IExpr part : parts){
             evalState |= part.eval();
         }
@@ -19,5 +19,9 @@ public class OrExpr implements IExpr{
 
     public void addPart(IExpr expression){
         parts.add(expression);
+    }
+
+    public List<IExpr> getParts() {
+        return parts;
     }
 }
