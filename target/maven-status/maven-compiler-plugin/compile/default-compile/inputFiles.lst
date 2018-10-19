@@ -22,11 +22,13 @@ C:\Users\Roman.Deynego\IdeaProjects\study\src\main\java\mapper\DeveloperMapper.j
 C:\Users\Roman.Deynego\IdeaProjects\study\src\main\java\swing\components\CheckBoxFrame.java
 C:\Users\Roman.Deynego\IdeaProjects\study\src\main\java\swing\calculator\CalculatorPanel.java
 C:\Users\Roman.Deynego\IdeaProjects\study\src\main\java\logicmk2\LogicReader.java
+C:\Users\Roman.Deynego\IdeaProjects\study\src\main\java\logicmk3\Model.java
 C:\Users\Roman.Deynego\IdeaProjects\study\src\main\java\swing\events\PlafFrame.java
 C:\Users\Roman.Deynego\IdeaProjects\study\src\main\java\developer\Developer.java
 C:\Users\Roman.Deynego\IdeaProjects\study\src\main\java\developer\DeveloperLogic.java
 C:\Users\Roman.Deynego\IdeaProjects\study\src\main\java\logicmk3\FactExpr.java
 C:\Users\Roman.Deynego\IdeaProjects\study\src\main\java\logicmk3\IExpr.java
+C:\Users\Roman.Deynego\IdeaProjects\study\src\main\java\logicmk3\LogicTxtParser.java
 C:\Users\Roman.Deynego\IdeaProjects\study\src\main\java\logic\LogicParser.java
 C:\Users\Roman.Deynego\IdeaProjects\study\src\main\java\logicmk3\AndExpr.java
 C:\Users\Roman.Deynego\IdeaProjects\study\src\main\java\sql\DevelopersJdbcDemo.java
@@ -36,7 +38,6 @@ C:\Users\Roman.Deynego\IdeaProjects\study\src\main\java\logicmk2\Application.jav
 C:\Users\Roman.Deynego\IdeaProjects\study\src\main\java\swing\DrawTest.java
 C:\Users\Roman.Deynego\IdeaProjects\study\src\main\java\logic\LogicReader.java
 C:\Users\Roman.Deynego\IdeaProjects\study\src\main\java\swing\components\TextComponentFrame.java
-C:\Users\Roman.Deynego\IdeaProjects\study\src\main\java\logicmk3\LogicAbstractTxtParser.java
 C:\Users\Roman.Deynego\IdeaProjects\study\src\main\java\Calculator.java
 C:\Users\Roman.Deynego\IdeaProjects\study\src\main\java\entity\UserExample.java
 C:\Users\Roman.Deynego\IdeaProjects\study\src\main\java\swing\NotHelloWorld.java

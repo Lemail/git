@@ -37,7 +37,6 @@ swing\events\PlafFrame.class
 swing\DrawComponent.class
 swing\components\CheckBoxFrameTest.class
 swing\calculator\CalculatorPanel.class
-logicmk3\LogicAbstractTxtParser.class
 swing\DrawFrame.class
 swing\events\MouseComponent.class
 developer\DeveloperLogic.class
