@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4453f04f-984e-480f-bd77-73d702927b3b" name="Default" comment="Logic reader application mark III release 1.0">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
       <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/angular/HelloWorld.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/logicmk3/BracketExpr.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/logicmk3/MissingFactTest.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/input.txt" afterPath="$PROJECT_DIR$/input.txt" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logicmk3/LogicTxtParser.java" afterPath="$PROJECT_DIR$/src/main/java/logicmk3/LogicTxtParser.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/logicmk3/LogicTests.java" afterPath="$PROJECT_DIR$/src/test/java/logicmk3/LogicTests.java" />
-      <change beforePath="$PROJECT_DIR$/study.iml" afterPath="$PROJECT_DIR$/study.iml" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
@@ -664,7 +657,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1537239842261</updated>
-      <workItem from="1539827464103" duration="19910000" />
+      <workItem from="1539827464103" duration="19974000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1537239929945</created>
@@ -904,7 +897,14 @@
       <option name="project" value="LOCAL" />
       <updated>1538713449823</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Logic reader application mark IV alpha">
+      <created>1539932987496</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1539932987496</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -940,7 +940,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19910000" />
+    <option name="totallyTimeSpent" value="19974000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1071,7 +1071,8 @@
     <MESSAGE value="Logic reader application mark II beta" />
     <MESSAGE value="Logic reader application mark III beta done" />
     <MESSAGE value="Logic reader application mark III release 1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="Logic reader application mark III release 1.0" />
+    <MESSAGE value="Logic reader application mark IV alpha" />
+    <option name="LAST_COMMIT_MESSAGE" value="Logic reader application mark IV alpha" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
