@@ -13,6 +13,8 @@ public class LogicTxtParser {
     private final String correctFactRegexp = "[_]*[\\p{Alpha}]+[\\w]*";
     private Model model = new Model();
     private State state;
+    private List<IExpr> bracketExprs = new ArrayList<>();
+    private final String bracketConst = "#BRACKET_EXPR#";
 
 
 
@@ -89,6 +91,7 @@ public class LogicTxtParser {
     }
 
     private void parseRule(Rule rule, String expression){
+        bracketExprs = new ArrayList<>();
         if (expression.contains("(")) {
             rule.setRule(parseByBracket(expression));
             if ((errorFound) && (rule.getRule() != null)) model.getRules().add(rule);
@@ -112,12 +115,9 @@ public class LogicTxtParser {
         return;
     }
 
-    private BracketExpr parseByBracket(String line){
+    private IExpr parseByBracket(String line){
         BracketExpr bracketExpr = new BracketExpr();
-        Scanner scanner = new Scanner(line);
-        String part;
-        String holder;
-        if (!line.contains(")")){
+        if ((line.contains("(")) && (!line.contains(")"))){
             System.out.println("Error in rule "+line+" (line "+lines+")");
             System.out.println("Missing closing bracket");
             System.out.println();
@@ -125,26 +125,40 @@ public class LogicTxtParser {
             return null;
         }
         else {
-            holder = scanner.next().trim();
-            part = holder.substring(0, holder.indexOf(")"));
-            part = part.substring(part.lastIndexOf("(") + 1);
-            //System.out.println(part);
-            if (part.contains("(")){
-                bracketExpr.addPart(parseByBracket(part));
-            }
-            else {
-                if (part.contains("||")){
-                    bracketExpr.addPart(parseByOr(part));
-                }
-                else {
-                    if (part.contains("&&")){
-                        bracketExpr.addPart(parseByAnd(part));
+            int openBrackets = 0;
+            int closeBrackets = 0;
+            String current;
+            String bracketExpression;
+            while (line.contains("(")){
+                int i = 0;
+                openBrackets = closeBrackets = 0;
+                Scanner scanner = new Scanner(line);
+                scanner.useDelimiter("");
+                while (scanner.hasNext()){
+                    current = scanner.next();
+                    i++;
+                    if (current.equals("(")) openBrackets++;
+                    if (current.equals(")")) closeBrackets++;
+                    if (((openBrackets & closeBrackets) != 0) && (openBrackets == closeBrackets)){
+                        bracketExpression = line.substring(line.indexOf("("), i);
+                        line = line.replace(bracketExpression, bracketConst);
+                        bracketExpression = bracketExpression.substring(1, bracketExpression.length() - 1);
+                        bracketExprs.add(parseByBracket(bracketExpression));
+                        break;
                     }
-                    else {
-                        bracketExpr.addPart(parseByFact(part));
-                    }
                 }
             }
+            if (line.equals(bracketConst)){
+                bracketExpr.addPart(bracketExprs.get(bracketExprs.size() - 1));
+                bracketExprs.remove(bracketExprs.size() - 1);
+            }
+            if (line.contains("||")){
+                bracketExpr.addPart(parseByOr(line));
+            }
+            else if (line.contains("&&")){
+                bracketExpr.addPart(parseByAnd(line));
+            }
+            else bracketExpr.addPart(parseByFact(line));
 
 
             if (bracketExpr.getParts().size() != 0)
@@ -165,6 +179,11 @@ public class LogicTxtParser {
                 orExpr.addPart(parseByAnd(part));
             }
             else {
+                if (part.equals(bracketConst)){
+                    orExpr.addPart(bracketExprs.get(0));
+                    bracketExprs.remove(0);
+                    continue;
+                }
                 orExpr.addPart(parseByFact(part));
             }
         }
@@ -189,6 +208,11 @@ public class LogicTxtParser {
         scanner.useDelimiter("&&");
         while (scanner.hasNext()){
             fact = scanner.next().trim();
+            if (fact.equals(bracketConst)){
+                andExpr.addPart(bracketExprs.get(0));
+                bracketExprs.remove(0);
+                continue;
+            }
             andExpr.addPart(parseByFact(fact));
         }
         if (andExpr.getParts().size() - andCount != 1){

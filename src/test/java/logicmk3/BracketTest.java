@@ -9,13 +9,13 @@ import java.util.Set;
 
 import static junit.framework.TestCase.assertEquals;
 
-public class CorrectReaderTest {
+public class BracketTest {
     @Test
-    public void correctReaderTest(){
+    public void bracketTest(){
         Model model;
         LogicTxtParser parser = new LogicTxtParser();
         try{
-            BufferedReader file = new BufferedReader(new FileReader("brackets.txt"));
+            BufferedReader file = new BufferedReader(new FileReader("correctinput.txt"));
             String line;
             while ((line=file.readLine()) != null){
                 parser.parseLine(line);
@@ -39,7 +39,7 @@ public class CorrectReaderTest {
         }
         else System.out.println("Logical error(s) detected\nCheck the log above");
         Set<String> returnedResult = model.getFacts();
-        assertEquals(returnedResult.toString(), "[B, C, D, F, T]");
+        assertEquals(returnedResult.toString(), "[A, C, D, E, S, VV]");
 
     }
 }
